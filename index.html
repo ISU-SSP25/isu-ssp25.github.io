@@ -12,24 +12,27 @@
   <!-- Navigation -->
    <header class="navbar">
   <div class="nav-container">
-    <div class="logo">SSP25 Lunar Spaceport</div>
-    <nav>
+      <div class="logo">
+        <img src="Images/patch.png" alt="SSP25 Patch" class="logo-patch"/>
+        SSP25 Lunar Spaceport
+      </div> 
+      <nav>
       <ul>
         <li><a href="#home">Home</a></li>
         <li class="dropdown">
           <a href="#">Topics ▾</a>
           <ul class="dropdown-menu">
-            <li><a href="#location">Locations</a></li>
-            <li><a href="#infrastructure">Infrastructure</a></li>
-            <li><a href="#energy">Energy</a></li>
-            <li><a href="#communications">Comms</a></li>
-            <li><a href="#isru">ISRU</a></li>
-            <li><a href="#habitation">Habitation</a></li>
-            <li><a href="#policy">Policy</a></li>
+            <li><a href="Subpages/location.html">Location</a></li>
+            <li><a href="Subpages/infrastructure.html">Infrastructure</a></li>
+            <li><a href="Subpages/energy.html">Energy</a></li>
+            <li><a href="Subpages/communications.html">Comms</a></li>
+            <li><a href="Subpages/isru.html">ISRU</a></li>
+            <li><a href="Subpages/habitation.html">Habitation</a></li>
+            <li><a href="Subpages/policy.html">Policy</a></li>
           </ul>
         </li>
-        <li><a href="#contributors">Contributors</a></li>
-        <li><a href="#resources">Resources</a></li>
+        <li><a href="Subpages/contributors.html">Contributors</a></li>
+        <li><a href="Subpages/resources.html">Resources</a></li>
       </ul>
     </nav>
   </div>
@@ -45,31 +48,6 @@
         </div>
     </div>
     </section>
-
-  <!-- Example Topic -->
-  <section id="location" class="section topic">
-    <div class="content">
-      <h2>Spaceport Location & Site Selection</h2>
-      <div class="toggle">
-        <button onclick="showView('short', 'location')">Short-Term</button>
-        <button onclick="showView('long', 'location')">Long-Term</button>
-      </div>
-      <div id="location-short" class="topic-content">
-        <p>
-          Short-Term: Focus on the lunar South Pole (De Gerlache Rim 2) 
-          for accessibility, sunlight exposure, and proximity to PSRs 
-          containing volatiles.
-        </p>
-      </div>
-      <div id="location-long" class="topic-content hidden">
-        <p>
-          Long-Term: Expansion to interconnected lunar hubs with optimized 
-          transport corridors and redundancy for continuous habitation 
-          and commerce.
-        </p>
-      </div>
-    </div>
-  </section>
 
   <script src="script.js"></script>
 </body>

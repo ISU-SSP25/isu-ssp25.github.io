@@ -42,8 +42,17 @@ p {
 }
 
 .logo {
+  display: flex;
+  align-items: center; /* vertically center text and image */
   font-weight: 700;
   font-size: 1.2rem;
+  gap: 0.6rem; /* space between image and text */
+}
+
+.logo-patch {
+  height: 32px; /* adjust size to fit nav */
+  width: auto;
+  display: block;
 }
 
 nav ul {
@@ -61,7 +70,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #0077cc;
+  color: #896795;
 }
 /* Dropdown Styles */
 nav ul li {
@@ -97,7 +106,7 @@ nav ul li {
 
 .dropdown-menu li a:hover {
   background: #f0f0f0;
-  color: #0077cc;
+  color: #896795;
 }
 
 /* Show dropdown on hover */
@@ -207,7 +216,7 @@ nav ul li.dropdown:hover .dropdown-menu {
 }
 
 .toggle button {
-  background: #0077cc;
+  background: #896795;
   color: white;
   border: none;
   padding: 0.6rem 1.2rem;
@@ -217,7 +226,7 @@ nav ul li.dropdown:hover .dropdown-menu {
 }
 
 .toggle button:hover {
-  background: #005fa3;
+  background: #755880;
 }
 
 .hidden {
