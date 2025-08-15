@@ -26,7 +26,7 @@ p {
   position: fixed;
   width: 100%;
   top: 0;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid #eee;
   z-index: 1000;
   transition: all 0.3s ease;
@@ -65,7 +65,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #f3f1f1;
+  color: #333;
   font-weight: 500;
 }
 
