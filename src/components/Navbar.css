@@ -1,0 +1,93 @@
+@import '../styles/colors.css';
+
+.Navbar {
+  background-color: var(--seasalt);
+  /* margin: 0 auto; */
+  padding: 20px;
+  max-width: 100%; /* Optional: Limit the page width */
+  /* margin-top: 20px; */
+}
+
+.Nav-logo {
+  width: 80px;  /* Default logo size */
+  height: auto;  /* Maintain aspect ratio */
+}
+
+/* Navbar Links */
+.Nav-link {
+  color: var(--space-cadet);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.Nav-link:hover {
+  color: var(--pomp-and-power); /* Light color on hover */
+}
+
+.Nav {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  flex-grow: 1; /* Ensures the nav takes up remaining space */
+}
+
+/* Space between logo and first nav link */
+.Nav-link-logo {
+  margin-right: 1rem;
+}
+
+.Nav-icons {
+  display: flex; /* Aligns icons horizontally */
+  align-items: center; /* Vertically centers the icons */
+  margin-left: auto; /* Pushes the icons to the far right */
+}
+
+.Nav-icon {
+  color: var(--pomp-and-power); /* White color for icons */
+  margin-left: 1rem; /* Adds space between icons */
+  text-decoration: none; /* Removes underline on links */
+}
+
+.Nav-icon:hover {
+  color: var(--space-cadet); /* Light color on hover for icons */
+}
+
+.Nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 9px; /* Adjust underline distance from text */
+  text-decoration-thickness: 1px; /* Controls the thickness */
+}
+
+/* Responsive Styles for Small Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .Navbar {
+    padding: 10px;
+  }
+
+  /* Smaller logo for mobile view */
+  .Nav-logo {
+    width: 1px; /* Adjust logo size for small screens */
+  }
+
+  /* Adjust padding for nav links */
+  .Nav-link {
+    padding: 0.5rem 0.8rem; /* Reduced padding for links on small screens */
+  }
+
+  /* Stack the navbar items vertically on smaller screens */
+  .Nav {
+    flex-direction: column;
+    align-items: flex-start; /* Align items at the start */
+  }
+
+  .Nav-icons {
+    margin-left: 0;
+    margin-top: 1rem; /* Space between icons when stacking */
+  }
+
+  /* Adjust links alignment for mobile */
+  .Nav-link {
+    width: 100%; /* Make nav links fill the width of the navbar */
+    text-align: center; /* Center text on mobile */
+    padding: 0.8rem 0; /* Adjust padding */
+  }
+}

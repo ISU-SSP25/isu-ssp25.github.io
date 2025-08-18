@@ -1,0 +1,114 @@
+@import '../styles/colors.css';
+
+/* Main container for the grid */
+.content-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    justify-items: center;
+    margin-top: 30px;
+    padding-bottom: 50px; /* Adds space at the bottom */
+}
+
+/* Minimalist content card with sharper edges */
+.content-element {
+    max-width: 320px;
+    margin: 12px auto;
+    border-radius: 4px; /* Less rounded corners */
+    border: 2px solid white; /* Clean white outline */
+    background: transparent;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Adjusts based on content */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Smooth hover effect */
+.content-element:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.15);
+}
+
+/* Image styles with fixed height */
+.content-element img {
+    width: 100%;
+    height: 200px; /* Ensures all images have the same height */
+    border-radius: 4px; /* Sharper corners */
+    object-fit: cover; /* Crop & fill */
+}
+
+/* Card body with flexible layout */
+.content-element .card-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+
+/* Title styling */
+.content-element .card-title {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Description text */
+.content-element .card-text {
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    opacity: 0.8;
+}
+
+/* Read More button */
+.content-element .btn-primary {
+    border: none;
+    background: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 6px 0;
+    text-align: center;
+    transition: color 0.2s ease;
+    font-size: 0.9rem;
+    display: block;
+    margin: 10px auto 0; /* Centers horizontally */
+    width: fit-content;
+}
+
+.content-element .btn-primary:hover {
+    color: var(--jungle-green); /* Subtle color change on hover */
+}
+
+/* Hashtags section */
+.content-element .content-hashtags {
+    font-style: italic;
+    margin-top: auto; /* Pushes hashtags to the bottom */
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Individual hashtags */
+.content-element .hashtag {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 3px 6px;
+    margin: 4px;
+    border-radius: 6px; /* Less rounded */
+    font-size: 0.8rem;
+    color: white;
+    opacity: 0.8;
+}
+
+/* Hashtag hover effect */
+.content-element .hashtag:hover {
+    background: white;
+    color: black;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
