@@ -1,21 +1,16 @@
-import { WebsiteNavbar, Footer } from "../components";
+import { WebsiteNavbar, Footer, ContributorsComponent } from "../components";
 import * as images from "../images/contributors";
+import React from "react";
+// import ContributorsComponent from "../components/ContributorsComponent.js";
+
 
 export function Contributors() {
     return (
         <div className="PageContainer">
           <WebsiteNavbar />
           <div className="PageContent">
-          {/* Text section with improved formatting */}
-          <div className="intro-text">
-            <p>
-              <div className="h2">
-                Contributors
-              </div>
-            </p>
+            <ContributorsComponent />
           </div>
-          </div>
-
           <Footer />
         </div>
       );

@@ -1,3 +1,30 @@
-// import Contributors from "./contributors.json";
+import AgatheLeRoch from "./agathe-le-roch.png";
+import AmeliaWilson from "./amelia-wilson.png";
+import AnaGuerreroGonzález from "./ana-guerrero-gonzalez.png";
+import DanielGalaczi from "./daniel-galaczi.png";
+import EliasWeingartner from "./elias-weingartner.png";
+import EmmaKeogh from "./emma-keogh.png";
+import EmmaVellard from "./emma-vellard.png";
+import EricDahlstrom from "./eric-dahlstrom.png";
+import HélènaDiMario from "./helena-di-mario.png";
+import HughieCurtis from "./hughie-curtis.png"
+import JinwonChung from "./jinwon-nathan-chung.png";
+import JoshuaBelding from "./joshua-belding.png";
+import JoshuaKassulke from "./joshua-kassulke.png";
+import JuliaKnauss from "./julia-knauss.png";
+import MariaCastellsValero from "./maria-castells-valero.png";
+import MariaPaulaPulidoG from "./maria-paula-pulido-gonzalez.png"
+import MarielaAlexandraVillanuevaColina from "./mariela-villanueva.png";
+import Matan from "./matan.png";
+import MaximLucMommerency from "./maxim-luc-mommerency.png"; 
+import MoniqueCalmon from "./monique-calmon.png";
+import NickHosewol from "./nick-hosewol.png";
+import NitzanRosen from "./nitzan-rosen.png";
+import PratikMevada from "./pratik-mevada.png";
+import SamuelWill from "./samuel-will.png";
+import SarkaHlavackova from "./sarka-hlavackova.png";
+import SofiaRosaPuleo from "./sofia-rosa-puleo.png";
+import SongQiu from "./song-qiu.png";
+import SophiaAhmedAshford from "./sophia-ahmed-ashford.png";
 
-// export { Contributors };
+export { AgatheLeRoch, AmeliaWilson, AnaGuerreroGonzález, DanielGalaczi, EliasWeingartner, EmmaKeogh, EmmaVellard, EricDahlstrom, HélènaDiMario, HughieCurtis, JinwonChung, JoshuaBelding, JoshuaKassulke, JuliaKnauss, MariaCastellsValero, MariaPaulaPulidoG, MarielaAlexandraVillanuevaColina, Matan, MaximLucMommerency, MoniqueCalmon, NickHosewol, NitzanRosen, PratikMevada, SamuelWill, SarkaHlavackova, SofiaRosaPuleo, SongQiu, SophiaAhmedAshford };

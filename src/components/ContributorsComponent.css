@@ -1,0 +1,64 @@
+@import '../styles/colors.css';
+
+.contributors-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.contributors-title h2 {
+  font-size: clamp(2rem, 5vw, 8rem);
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--pomp-and-power);
+}
+
+.contributors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.contributor-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #f9fafb; /* light gray */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.contributor-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contributor-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #d1d5db; /* gray border */
+}
+
+.contributor-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contributor-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.contributor-link {
+  color: var(--pomp-and-power);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.contributor-link:hover {
+  font-weight: bold;
+}
