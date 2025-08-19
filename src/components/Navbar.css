@@ -6,6 +6,18 @@
   padding: 20px;
   max-width: 100%; /* Optional: Limit the page width */
   /* margin-top: 20px; */
+  position: sticky;  /* makes it stick */
+  top: 0;            /* stick to top of the page */
+  z-index: 1000;     /* ensures it stays above other content */
+
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+/* Navbar when scrolled */
+.Navbar.scrolled {
+  background-color: rgba(250, 250, 250, 0.8); /* more transparent */
+  padding: 10px 20px; /* smaller padding = reduced height */
+  backdrop-filter: blur(6px); /* nice frosted glass effect (optional) */
 }
 
 .Nav-logo {
