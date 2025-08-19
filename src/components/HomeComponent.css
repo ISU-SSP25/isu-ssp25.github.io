@@ -1,71 +1,49 @@
 @import '../styles/colors.css';
 
-/* Main container for HomeComponent section */
 .home-component-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 100%;
-  /* margin: 30px auto; */
+  position: relative;
+  display: block;
+  padding: 0;
+  flex-wrap: wrap;
+
   background-color: var(--antiflash-white);
-  padding: 30px;
-  flex-wrap: wrap; /* Ensures the image and text stack on small screens */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--raisin-black);
 }
 
-/* Text section styling */
+/* Text positioned top-right */
 .home-component-text {
-  flex: 1;
-  padding-right: 20px;
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  text-align: right;
+  max-width: 300px;
 }
 
 /* Heading styling */
 .home-component-text h2 {
-  color: var(--raisin-black);
-  font-size: 1.5rem;
+  font-size: 2.1rem;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 /* Paragraph styling */
 .home-component-text p {
-  color: var(--raisin-black);
   font-size: 1rem;
   line-height: 1.6;
-  margin-top: 10px;
 }
 
-/* Photo section styling */
-.home-component-photo {
-  width: 300px; /* Control the width of the photo */
-  height: auto;
-  flex-shrink: 0;
-  margin-top: 20px; /* Adds margin above the image */
-}
-
-/* Image styling */
-.home-component-photo img {
-  width: 100%;
-  height: auto;
-  border-radius: 2px;
-  border: 1px solid var(--raisin-black); /* Optional border for photo */
-  object-fit: cover;
-}
-
-/* Responsive Styles for Small Screens (max-width: 768px) */
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .home-component-container {
-    flex-direction: column; /* Stack text and image vertically */
-    padding: 20px; /* Adjust padding for smaller screens */
-  }
-
-  /* Image styling for small screens */
-  .home-component-photo {
-    width: 100%; /* Make the image width 100% on small screens */
-    margin-top: 20px; /* Ensure there's space between text and image */
-  }
-
-  /* Text section adjustments for small screens */
   .home-component-text {
-    padding-right: 0; /* Remove extra right padding */
-    text-align: center; /* Center-align text for smaller screens */
+    top: 15px;
+    right: 15px;
+    max-width: 90%;
+  }
+
+  .home-component-text h2 {
+    font-size: 1.5rem;
   }
 }
