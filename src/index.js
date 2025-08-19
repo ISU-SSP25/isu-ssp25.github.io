@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { HashRouter, Routes, Route } from "react-router-dom";  // Change BrowserRouter to HashRouter
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { Home, ShortTerm, LongTerm, Collaborators, Resources} from "./pages";
+import { Home, ShortTerm, LongTerm, Contributors, Resources} from "./pages";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +13,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/short-term" element={<ShortTerm />} />
         <Route path="/long-term" element={<LongTerm />} />
-        <Route path="/collaborators" element={<Collaborators />} /> 
+        <Route path="/contributors" element={<Contributors />} /> 
         <Route path="/resources" element={<Resources />} />
         
       </Routes>

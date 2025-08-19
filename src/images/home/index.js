@@ -1,3 +1,3 @@
-import FirstPageNoTitle from "./FirstPageNoTitle.png";
+import LunarCoverHome from "./LunarCoverHome.png";
 
-export { FirstPageNoTitle };
+export { LunarCoverHome };

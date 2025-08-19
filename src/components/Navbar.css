@@ -52,9 +52,11 @@
 }
 
 .Nav-link.active {
-  text-decoration: underline;
+  font-weight: bold;
+  color: var(--pomp-and-power);
+  /* text-decoration: underline;
   text-underline-offset: 9px; /* Adjust underline distance from text */
-  text-decoration-thickness: 1px; /* Controls the thickness */
+  /* text-decoration-thickness: 1px; Controls the thickness */
 }
 
 /* Responsive Styles for Small Screens (max-width: 768px) */

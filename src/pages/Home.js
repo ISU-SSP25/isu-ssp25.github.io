@@ -7,7 +7,7 @@ export function Home() {
             <WebsiteNavbar />
             <div className="PageContent">
                 <div className="intro-text">
-                    <HomeComponent image={images.FirstPageNoTitle} title={<h2>&gt; &nbsp;Sustainable Lunar Spaceport</h2>} text={<>
+                    <HomeComponent image={images.LunarCoverHome} title={<h2>&gt; &nbsp;Sustainable Lunar Spaceport</h2>} text={<>
                     </>}
                     />
                 </div>

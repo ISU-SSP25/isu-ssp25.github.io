@@ -24,8 +24,8 @@ export function WebsiteNavbar() {
           <Nav.Link className={`Nav-link ${location.pathname === "/long-term" ? "active" : ""}`} href="/#/long-term">
             Long Term
           </Nav.Link>
-          <Nav.Link className={`Nav-link ${location.pathname === "/collaborators" ? "active" : ""}`} href="/#/collaborators">
-            Collaborators
+          <Nav.Link className={`Nav-link ${location.pathname === "/contributors" ? "active" : ""}`} href="/#/contributors">
+            Contributors
             </Nav.Link>
           <Nav.Link className={`Nav-link ${location.pathname === "/resources" ? "active" : ""}`} href="/#/resources">
             Resources

@@ -54,15 +54,16 @@ code {
 /* Global styles for all links */
 a {
   color: var(--pomp-and-power);
-  text-decoration: none; /* Removes the default underline */
-  font-weight: 500; /* Makes links slightly bolder */
-  transition: color 0.3s ease-in-out; /* Smooth color transition */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover {
   color: var(--pomp-and-power);
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  text-shadow: 0 0 1px var(--pomp-and-power), 0 0 1px var(--pomp-and-power);
+  /* text-decoration: underline;
+  text-underline-offset: 4px; */
 }
 
 /* Active links (when clicked) */
