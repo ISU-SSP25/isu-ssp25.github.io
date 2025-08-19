@@ -22,10 +22,11 @@ export function HomeComponent({ title, image, text }) {
           : undefined,
       }}
     >
-      <div className="home-component-text">
-        {title && <h2>{title}</h2>}
-        <p>{text}</p>
-      </div>
+    <div className="home-component-text">
+      {title && <h2>{title}</h2>}
+      <p>{text}</p>
+    </div>
+    
     </div>
   );
 }

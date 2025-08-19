@@ -11,23 +11,32 @@
   background-repeat: no-repeat;
   background-position: center;
   color: var(--raisin-black);
+
+  max-height: 1100px;   /* maximum section height */
+  min-height: 250px;   /* ensures it's not too small */
+  overflow: hidden;    /* hides anything beyond max height */
 }
 
-/* Text positioned top-right */
 .home-component-text {
   position: absolute;
-  top: 20px;
-  right: 100px;
-  text-align: right;
-  max-width: 300px;
+  top: 50%;              /* push down to the middle */
+  right: 10%;             /* keep some margin from the right edge */
+  transform: translateY(-50%); /* perfect vertical centering */
+  
+  text-align: left;
+  max-width: 40%;        /* responsive width (shrinks on small screens) */
+  padding: 1rem;
 }
+
 
 /* Heading styling */
 .home-component-text h2 {
-  font-size: 2.1rem;
+  font-size: clamp(2rem, 5vw, 8rem);
   font-weight: bold;
   margin-bottom: 10px;
+  color: var(--pomp-and-power);
 }
+
 
 /* Paragraph styling */
 .home-component-text p {
@@ -43,7 +52,13 @@
     max-width: 90%;
   }
 
-  .home-component-text h2 {
-    font-size: 1.5rem;
+  .home-component-text {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;  /* center on mobile */
   }
 }
