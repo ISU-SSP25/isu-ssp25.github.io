@@ -1,7 +1,7 @@
 import { ContentElement, WebsiteNavbar, Footer } from "../components";
-import * as images from "../images/short-term";
+import * as images from "../images/short-term-mission";
 
-export function ShortTerm() {
+export function ShortTermMission() {
   return (
     <div className="PageContainer">
       <WebsiteNavbar />
@@ -10,7 +10,7 @@ export function ShortTerm() {
         <div className="intro-text">
           <p>
             <div className="h2">
-              Short Term
+              Short Term Mission
             </div>
           </p>
         </div>

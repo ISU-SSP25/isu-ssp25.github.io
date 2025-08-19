@@ -1,7 +1,7 @@
 import { ContentElement, WebsiteNavbar, Footer } from "../components";
-import * as images from "../images/long-term";
+import * as images from "../images/long-term-vision";
 
-export function LongTerm() {
+export function LongTermVision() {
     return (
        <div className="PageContainer">
           <WebsiteNavbar />
@@ -10,7 +10,7 @@ export function LongTerm() {
           <div className="intro-text">
             <p>
               <div className="h2">
-                Long Term
+                Long Term Vision
               </div>
             </p>
           </div>

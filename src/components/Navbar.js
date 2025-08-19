@@ -27,11 +27,11 @@ export function WebsiteNavbar() {
           <Nav.Link className={`Nav-link ${location.pathname === "/" ? "active" : ""}`} href="/">
             Home
           </Nav.Link>
-          <Nav.Link className={`Nav-link ${location.pathname === "/short-term" ? "active" : ""}`} href="/#/short-term">
-            Short Term
+          <Nav.Link className={`Nav-link ${location.pathname === "/short-term-mission" ? "active" : ""}`} href="/#/short-term-mission">
+            Short Term Mission
           </Nav.Link>
-          <Nav.Link className={`Nav-link ${location.pathname === "/long-term" ? "active" : ""}`} href="/#/long-term">
-            Long Term
+          <Nav.Link className={`Nav-link ${location.pathname === "/long-term-vision" ? "active" : ""}`} href="/#/long-term-vision">
+            Long Term Vision
           </Nav.Link>
           <Nav.Link className={`Nav-link ${location.pathname === "/contributors" ? "active" : ""}`} href="/#/contributors">
             Contributors

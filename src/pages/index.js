@@ -1,5 +1,5 @@
 export * from "./Home";
-export * from "./ShortTerm";
-export * from "./LongTerm";
+export * from "./ShortTermMission";
+export * from "./LongTermVision";
 export * from "./Contributors";
 export * from "./Resources";
