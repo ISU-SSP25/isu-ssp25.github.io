@@ -1,5 +1,5 @@
 import { WebsiteNavbar, Footer } from "../components";
-import * as images from "../images/collaborators";
+import * as images from "../images/contributors";
 
 export function Contributors() {
     return (
@@ -10,7 +10,7 @@ export function Contributors() {
           <div className="intro-text">
             <p>
               <div className="h2">
-                Collaborators
+                Contributors
               </div>
             </p>
           </div>
