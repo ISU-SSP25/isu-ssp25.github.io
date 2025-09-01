@@ -1,21 +1,13 @@
-import { ContentElement, WebsiteNavbar, Footer } from "../components";
+import { WebsiteNavbar, Footer, ResourcesComponent } from "../components";
 
 export function Resources() {
-  return (
-    <div className="PageContainer">
-      <WebsiteNavbar />
-      <div className="PageContent">
-        {/* Text section with improved formatting */}
-        <div className="intro-text">
-          <p>
-            <div className="h2">
-              Resources
-            </div>
-          </p>
+    return (
+        <div className="PageContainer">
+          <WebsiteNavbar />
+          <div className="PageContent">
+            <ResourcesComponent />
+          </div>
+          <Footer />
         </div>
-        </div>
-
-        <Footer />
-        </div>
-  );
+      );
 }
