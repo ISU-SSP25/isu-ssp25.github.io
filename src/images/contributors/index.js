@@ -26,5 +26,6 @@ import SarkaHlavackova from "./sarka-hlavackova.png";
 import SofiaRosaPuleo from "./sofia-rosa-puleo.png";
 import SongQiu from "./song-qiu.png";
 import SophiaAhmedAshford from "./sophia-ahmed-ashford.png";
+import Fallback from "./fallback.png";
 
-export { AgatheLeRoch, AmeliaWilson, AnaGuerreroGonzález, DanielGalaczi, EliasWeingartner, EmmaKeogh, EmmaVellard, EricDahlstrom, HélènaDiMario, HughieCurtis, JinwonChung, JoshuaBelding, JoshuaKassulke, JuliaKnauss, MariaCastellsValero, MariaPaulaPulidoG, MarielaAlexandraVillanuevaColina, Matan, MaximLucMommerency, MoniqueCalmon, NickHosewol, NitzanRosen, PratikMevada, SamuelWill, SarkaHlavackova, SofiaRosaPuleo, SongQiu, SophiaAhmedAshford };
+export { AgatheLeRoch, AmeliaWilson, AnaGuerreroGonzález, DanielGalaczi, EliasWeingartner, EmmaKeogh, EmmaVellard, EricDahlstrom, Fallback, HélènaDiMario, HughieCurtis, JinwonChung, JoshuaBelding, JoshuaKassulke, JuliaKnauss, MariaCastellsValero, MariaPaulaPulidoG, MarielaAlexandraVillanuevaColina, Matan, MaximLucMommerency, MoniqueCalmon, NickHosewol, NitzanRosen, PratikMevada, SamuelWill, SarkaHlavackova, SofiaRosaPuleo, SongQiu, SophiaAhmedAshford };

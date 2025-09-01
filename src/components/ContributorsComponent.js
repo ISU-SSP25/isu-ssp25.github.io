@@ -13,7 +13,7 @@ export function ContributorsComponent() {
         {contributors.map((person, index) => (
           <div key={index} className="contributor-card">
             <img
-              src={images[person.name.replace(/\s+/g, "")]}
+              src={images[person.name.replace(/\s+/g, "")] || images["Fallback"]}
               alt={person.name}
               className="contributor-image"
             />
