@@ -1,64 +1,86 @@
 @import '../styles/colors.css';
 
 .contributors-container {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
 }
 
-.contributors-title h2 {
-  font-size: clamp(2rem, 5vw, 8rem);
+.contributors-title {
+  font-size: 2.25rem;
   font-weight: bold;
-  margin-bottom: 10px;
-  color: var(--pomp-and-power);
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .contributors-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
 }
 
 .contributor-card {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
+  background: white;
   border-radius: 1rem;
-  background-color: #f9fafb; /* light gray */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .contributor-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .contributor-image {
-  width: 80px;
-  height: 80px;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #d1d5db; /* gray border */
-}
-
-.contributor-info {
-  display: flex;
-  flex-direction: column;
+  border: 3px solid #e5e7eb;
 }
 
 .contributor-name {
+  display: block;
   font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
 }
 
-.contributor-link {
-  color: var(--pomp-and-power);
-  text-decoration: none;
-  font-size: 0.95rem;
+.contributor-role {
+  display: block;
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
 }
 
-.contributor-link:hover {
+.avatar-wrapper {
+  position: relative; /* needed for absolute positioning */
+  display: inline-block;
+}
+
+.linkedin-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(25%, 25%); /* nudge slightly out of the circle */
+  background-color: #0a66c2;
+  color: white;
+  font-size: 0.75rem;
   font-weight: bold;
+  border-radius: 6px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
 }

@@ -1,6 +1,7 @@
 import AgatheLeRoch from "./agathe-le-roch.png";
 import AmeliaWilson from "./amelia-wilson.png";
 import AnaGuerreroGonzález from "./ana-guerrero-gonzalez.png";
+import BondMcGillivray from "./bond-mcgillivray.png"
 import DanielGalaczi from "./daniel-galaczi.png";
 import EliasWeingartner from "./elias-weingartner.png";
 import EmmaKeogh from "./emma-keogh.png";
@@ -8,7 +9,7 @@ import EmmaVellard from "./emma-vellard.png";
 import EricDahlstrom from "./eric-dahlstrom.png";
 import HélènaDiMario from "./helena-di-mario.png";
 import HughieCurtis from "./hughie-curtis.png"
-import JinwonChung from "./jinwon-nathan-chung.png";
+import JinWonChung from "./jinwon-nathan-chung.png";
 import JoshuaBelding from "./joshua-belding.png";
 import JoshuaKassulke from "./joshua-kassulke.png";
 import JuliaKnauss from "./julia-knauss.png";
@@ -20,12 +21,14 @@ import MaximLucMommerency from "./maxim-luc-mommerency.png";
 import MoniqueCalmon from "./monique-calmon.png";
 import NickHosewol from "./nick-hosewol.png";
 import NitzanRosen from "./nitzan-rosen.png";
+import OhadShapira from "./ohad-shapira.png"
+import PedroChen from "./pedro-chen.png";
 import PratikMevada from "./pratik-mevada.png";
 import SamuelWill from "./samuel-will.png";
+import SándorBurian from "./sandor-burian.png"
 import SarkaHlavackova from "./sarka-hlavackova.png";
 import SofiaRosaPuleo from "./sofia-rosa-puleo.png";
 import SongQiu from "./song-qiu.png";
 import SophiaAhmedAshford from "./sophia-ahmed-ashford.png";
-import Fallback from "./fallback.png";
 
-export { AgatheLeRoch, AmeliaWilson, AnaGuerreroGonzález, DanielGalaczi, EliasWeingartner, EmmaKeogh, EmmaVellard, EricDahlstrom, Fallback, HélènaDiMario, HughieCurtis, JinwonChung, JoshuaBelding, JoshuaKassulke, JuliaKnauss, MariaCastellsValero, MariaPaulaPulidoG, MarielaAlexandraVillanuevaColina, Matan, MaximLucMommerency, MoniqueCalmon, NickHosewol, NitzanRosen, PratikMevada, SamuelWill, SarkaHlavackova, SofiaRosaPuleo, SongQiu, SophiaAhmedAshford };
+export { AgatheLeRoch, AmeliaWilson, AnaGuerreroGonzález, BondMcGillivray, DanielGalaczi, EliasWeingartner, EmmaKeogh, EmmaVellard, EricDahlstrom, HélènaDiMario, HughieCurtis, JinWonChung, JoshuaBelding, JoshuaKassulke, JuliaKnauss, MariaCastellsValero, MariaPaulaPulidoG, MarielaAlexandraVillanuevaColina, Matan, MaximLucMommerency, MoniqueCalmon, NickHosewol, NitzanRosen, OhadShapira, PedroChen, PratikMevada, SamuelWill, SándorBurian, SarkaHlavackova, SofiaRosaPuleo, SongQiu, SophiaAhmedAshford };
