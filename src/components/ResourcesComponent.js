@@ -45,7 +45,7 @@ export function ResourcesComponent() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Report: ISU Library - Sustainable Lunar Spaceports - SSP25
+                    Report: ISU Library - Sustainable Lunar Spaceports
                 </a>
             </div>
         </div>

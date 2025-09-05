@@ -1,4 +1,3 @@
-import React from "react";
 import "./TextComponent.css";
 
 export function TextComponent({ text }) {

@@ -18,7 +18,7 @@ export function ContentElement({ image, title, description, link, hashtags, butt
             </Button>
           )}
           <div className="content-hashtags">
-            {hashtags.map((tag, index) => (
+            {hashtags?.map((tag, index) => (
               <span key={index} className="hashtag">
                 #{tag}
               </span>
