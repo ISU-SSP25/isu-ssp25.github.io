@@ -1,5 +1,5 @@
 import { ContentElement, WebsiteNavbar, Footer } from "../components";
-import * as images from "../images/long-term-vision";
+// import * as images from "../images/long-term-vision";
 
 export function LongTermVision() {
     return (

@@ -1,5 +1,5 @@
 import { ContentElement, WebsiteNavbar, Footer } from "../components";
-import * as images from "../images/short-term-mission";
+// import * as images from "../images/short-term-mission";
 
 export function ShortTermMission() {
   return (

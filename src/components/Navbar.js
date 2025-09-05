@@ -8,7 +8,7 @@ import Patch from "../images/patch.png";
 export function WebsiteNavbar() {
   const location = useLocation(); // Get current route
   
-  window.addEventListener("scroll", function () {
+  window.addEventListener("scroll", () => {
     const navbar = document.querySelector(".Navbar");
     if (window.scrollY > 50) {
       navbar.classList.add("scrolled");
