@@ -46,8 +46,8 @@
 }
 
 .who-are-we-link:hover {
-  background: var(--pomp-and-power-dark, #8B2A5B);
-}
+  background: var(--pomp-and-power-light, #b47bb7); /* fallback to a lilac shade */
+  color: #fff;}
 
 .who-are-we-image-wrapper {
   flex: 1 1 0;

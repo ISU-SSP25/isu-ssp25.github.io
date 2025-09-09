@@ -46,8 +46,8 @@
 }
 
 .term-box-link:hover {
-  background: var(--pomp-and-power-dark, #8B2A5B);
-}
+  background: var(--pomp-and-power-light, #b47bb7); /* fallback to a lilac shade */
+  color: #fff;}
 
 @media (max-width: 768px) {
   .term-boxes-container {
