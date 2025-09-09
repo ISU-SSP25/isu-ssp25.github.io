@@ -7,3 +7,4 @@ export * from "./ResourcesComponent"
 export * from "./Footer";
 export * from "./TermComponent";
 export * from "./TermBox";
+export * from "./WhoAreWeBox";

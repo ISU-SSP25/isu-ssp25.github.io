@@ -1,3 +1,3 @@
 import LunarCoverHome from "./LunarCoverHome.png";
-
-export { LunarCoverHome };
+import Team from "./Team.jpeg";
+export { LunarCoverHome, Team };
