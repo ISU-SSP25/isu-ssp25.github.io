@@ -9,3 +9,4 @@ export * from "./TermComponent";
 export * from "./TermBox";
 export * from "./WhoAreWeBox";
 export * from "./ScrollToTop";
+export * from "./FlagChain";

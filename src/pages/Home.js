@@ -1,4 +1,4 @@
-import { WebsiteNavbar, HomeComponent, TextComponent, Footer, TermBox, WhoAreWeBox } from "../components";
+import { WebsiteNavbar, HomeComponent, TextComponent, FlagChain, Footer, TermBox, WhoAreWeBox } from "../components";
 import * as images from "../images/home";
 
 export function Home() {
@@ -28,11 +28,7 @@ export function Home() {
                     image={images.Team}
                     alt="Group picture"
                 />
-
-                    <TextComponent text={<>
-                        Group picture and flag chain
-                    </>} />
-                
+                <FlagChain />                
             </div>
             <Footer />
         </div>

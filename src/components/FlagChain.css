@@ -1,0 +1,21 @@
+.flag-chain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  margin: 2em 0 0 0;
+  width: 100%;
+  flex-wrap: wrap; /* <-- Allows flags to wrap to the next line */
+}
+
+@media (max-width: 600px) {
+  .flag-chain {
+    gap: 0.3em;
+    justify-content: center;
+    padding: 0 0.5em;
+  }
+  .flag-chain > * {
+    width: 1.5em !important;
+    height: 1.5em !important;
+  }
+}
