@@ -4,11 +4,13 @@ import { HashRouter, Routes, Route } from "react-router-dom";  // Change Browser
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { Home, ShortTermMission, LongTermVision, Contributors, Resources} from "./pages";
+import { ScrollToTop } from "./components"; // Import your component
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <HashRouter>
+      <ScrollToTop /> {/* Add your component here */} 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/short-term-mission" element={<ShortTermMission />} />
