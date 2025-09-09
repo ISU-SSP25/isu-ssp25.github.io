@@ -117,3 +117,49 @@
     font-weight: 500;
     color: var(--text-color, #333);
 }
+
+.github-resource {
+    display: flex;
+    align-items: center;
+    background: #f6f8fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(33,37,41,0.07);
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+
+.github-icon {
+    font-size: 2.5rem;
+    color: #24292f;
+    flex-shrink: 0;
+}
+
+.github-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.github-title {
+    font-weight: 600;
+    color: #24292f;
+    font-size: 1.1rem;
+}
+
+.github-link {
+    background: var(--pomp-and-power, #b47bb7);
+    color: #fff !important;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+    display: inline-block;
+    margin-top: 0.2rem;
+}
+
+.github-link:hover {
+    background: var(--pomp-and-power-light, #d1a7d7);
+    color: #24292f !important;
+}

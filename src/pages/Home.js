@@ -30,7 +30,7 @@ export function Home() {
                 />
                 <FlagChain />                
             </div>
-            <Footer />
+            
         </div>
     );
 }

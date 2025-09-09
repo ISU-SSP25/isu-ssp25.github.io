@@ -14,7 +14,7 @@ export function ShortTermMission() {
 } />
 			</div>
 
-			<Footer />
+			
 		</div>
 	);
 }
