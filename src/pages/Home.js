@@ -1,4 +1,4 @@
-import { WebsiteNavbar, HomeComponent, TextComponent, Footer } from "../components";
+import { WebsiteNavbar, HomeComponent, TextComponent, Footer, TermBox } from "../components";
 import * as images from "../images/home";
 
 export function Home() {
@@ -11,19 +11,25 @@ export function Home() {
                     </>}
                     />
                 </div>
-                <div className="text-component">
-                    <TextComponent text={<>
-                        Short and Long term boxes
-                    </>} />
+                <div className="term-boxes-container">
+                    <TermBox
+                        title="Short Term Mission"
+                        text="Humanity’s return to the Moon starts with robust infrastructure for frequent landings, launches, and logistics. Discover how the short term mission lays the groundwork for lunar exploration."
+                        link="/short-term-mission"
+                    />
+                    <TermBox
+                        title="Long Term Vision"
+                        text="The lunar spaceport is more than a gateway—it’s the foundation for a permanent lunar community and a thriving space economy. Explore our vision for the future of a long-term human presence on and around the Moon."
+                        link="/long-term-vision"
+                    />
                 </div>
                 <div className="text-component">
                     <TextComponent text={<>
                         Group picture and flag chain
                     </>} />
                 </div>
-            </div>{" "}
+            </div>
             <Footer />
         </div>
     );
 }
-

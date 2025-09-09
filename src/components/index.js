@@ -6,3 +6,4 @@ export * from "./ContributorsComponent";
 export * from "./ResourcesComponent"
 export * from "./Footer";
 export * from "./TermComponent";
+export * from "./TermBox";
