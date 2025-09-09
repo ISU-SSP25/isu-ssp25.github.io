@@ -13,7 +13,7 @@
   color: var(--raisin-black);
 
   max-height: 1100px;   /* maximum section height */
-  min-height: 250px;   /* ensures it's not too small */
+  min-height: 900px;   /* ensures it's not too small */
   overflow: hidden;    /* hides anything beyond max height */
 }
 
@@ -31,9 +31,10 @@
 
 /* Heading styling */
 .home-component-text h2 {
-  font-size: clamp(2rem, 5vw, 8rem);
+  font-size: clamp(2rem, 4.5vw, 8rem);
   font-weight: bold;
   margin-bottom: 10px;
+  margin-top: 20px;
   color: var(--pomp-and-power);
 }
 
@@ -44,21 +45,35 @@
   line-height: 1.6;
 }
 
-/* Responsive Styles */
+.home-component-mobile-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (max-width: 768px) {
-  .home-component-text {
-    top: 15px;
-    right: 15px;
-    max-width: 90%;
+  .home-component-container {
+    background-image: none !important;
+    min-height: unset;
+    padding-top: 0;
   }
 
   .home-component-text {
-    position: relative;
-    top: auto;
+    top: 10px;
     right: auto;
+    left: auto;
+    position: relative;
     transform: none;
-    max-width: 90%;
     margin: 0 auto;
-    text-align: center;  /* center on mobile */
+    max-width: 95%;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
   }
 }

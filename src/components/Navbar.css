@@ -3,7 +3,7 @@
 .Navbar {
   background-color: var(--seasalt);
   /* margin: 0 auto; */
-  padding: 20px;
+  padding: 10px;
   max-width: 100%; /* Optional: Limit the page width */
   /* margin-top: 20px; */
   position: sticky;  /* makes it stick */
