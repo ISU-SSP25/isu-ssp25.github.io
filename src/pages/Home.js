@@ -7,7 +7,7 @@ export function Home() {
             <WebsiteNavbar />
             <div className="PageContent">
                 <div className="intro-text">
-                    <HomeComponent image={images.LunarCoverHome} title={<h2> Building a Sustainable Lunar Spaceport</h2>} text={<>
+                    <HomeComponent image={images.LunarCoverHome} title={<h2>Enabling Sustainable Lunar Spaceports</h2>} text={<>
                     </>}
                     />
                 </div>
