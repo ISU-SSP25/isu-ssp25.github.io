@@ -31,10 +31,11 @@
 
 /* Heading styling */
 .home-component-text h2 {
-  font-size: clamp(2rem, 4.5vw, 8rem);
+  font-size: clamp(2rem, 5vw, 5rem);
   font-weight: bold;
   margin-bottom: 10px;
-  margin-top: 20px;
+  margin-top: 150px;
+  margin-left: 5px;
   color: var(--pomp-and-power);
 }
 
@@ -73,7 +74,11 @@
     margin: 0 auto;
     max-width: 95%;
     text-align: center;
-    padding: 1rem;
+    padding: 0rem;
     background-color: rgba(255, 255, 255, 0.3);
+  }
+  .home-component-text h2 {
+    font-size: 2rem;
+    margin-top: 20px;
   }
 }
