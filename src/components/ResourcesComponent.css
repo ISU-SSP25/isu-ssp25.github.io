@@ -50,9 +50,7 @@
 
 .resource-item a:hover {
     background-color: rgba(0, 0, 0, 0.05);
-    transform: translateY(-1px);
     text-decoration: underline;
-
 }
 
 /* Video Section */

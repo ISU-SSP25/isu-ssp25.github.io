@@ -23,7 +23,15 @@ export function ResourcesComponent() {
 			<h3 className="institution-title">
 				International Space University (ISU) - Space Studies Program 2025
 			</h3>
-
+			<div className="resource-item">
+				<a
+					href="https://sustainablelunar.space"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Report: ISU Library - Sustainable Lunar Spaceports
+				</a>
+			</div>
 			<div className="resource-item video-item">
 				<span className="video-title">
 					Sustainable Lunar Spaceports Presentation (Hanyang University ERICA):{" "}
@@ -42,15 +50,7 @@ export function ResourcesComponent() {
 				</div>
 			</div>
 			<br />
-			<div className="resource-item">
-				<a
-					href="https://sustainablelunar.space"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Report: ISU Library - Sustainable Lunar Spaceports
-				</a>
-			</div>
+			
 			<h3 className="institution-title">Website Source Code</h3>
 			<div className="resource-item github-resource">
 				<FaGithub className="github-icon" />

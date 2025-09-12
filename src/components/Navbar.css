@@ -33,7 +33,7 @@
 }
 
 .Nav-link:hover {
-  color: var(--pomp-and-power); /* Light color on hover */
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .Nav {
