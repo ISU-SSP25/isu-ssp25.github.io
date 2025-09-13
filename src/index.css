@@ -12,8 +12,8 @@ body {
     sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--seasalt); /* Black background for all pages */
-  color: var(--space-cadet); /* White text color for all pages */
+  background-color: var(--dark-charcoal); /* Black background for all pages */
+  color: var(--seasalt); /* White text color for all pages */
 }
 
 code {
@@ -53,20 +53,20 @@ code {
 
 /* Global styles for all links */
 a {
-  color: var(--pomp-and-power);
+  color: var(--verdigris);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover {
-  color: var(--pomp-and-power);
-  text-shadow: 0 0 1px var(--pomp-and-power), 0 0 1px var(--pomp-and-power);
+  color: var(--verdigris);
+  text-shadow: 0 0 1px var(--verdigris), 0 0 1px var(--verdigris);
   /* text-decoration: underline;
   text-underline-offset: 4px; */
 }
 
 /* Active links (when clicked) */
 a:active {
-  color: var(--pomp-and-power); /* Keeps the hover color when clicked */
+  color: var(--verdigris); /* Keeps the hover color when clicked */
 }

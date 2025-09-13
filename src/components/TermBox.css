@@ -11,7 +11,7 @@
 }
 
 .term-box {
-  background: var(--seasalt, #f8f8f8);
+  background: var(--charcoal-grey, #f8f8f8);
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
   padding: 2rem;
@@ -26,17 +26,17 @@
 .term-box-title {
   font-size: 1.3rem;
   font-weight: 600;
-  color: var(--pomp-and-power);
+  color: var(--verdigris);
   margin-bottom: 1rem;
 }
 
 .term-box-text {
-  color: var(--raisin-black, #222);
+  color: var(--antiflash-white);
   margin-bottom: 1.5rem;
 }
 
 .term-box-link {
-  background: var(--pomp-and-power);
+  background: var(--verdigris);
   color: #fff;
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
@@ -46,7 +46,7 @@
 }
 
 .term-box-link:hover {
-  background: var(--pomp-and-power-light, #b47bb7); /* fallback to a lilac shade */
+  background: var(--verdigris-light); /* fallback to a lilac shade */
   color: #fff;}
 
 @media (max-width: 768px) {

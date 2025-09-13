@@ -7,9 +7,10 @@
     justify-content: space-between;
     max-width: 100%;
     /* margin: 20px auto; */
-    background-color: var(--seasalt);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--charcoal-grey);
+    box-shadow: 0 2px 8px rgba(122, 138, 153, 0.07);
     padding: 10px;
+    border-radius: 8px;
   }
   
   .text-component-content {
@@ -18,7 +19,7 @@
   }
   
   .text-component-content p {
-    color: var(--raisin-black);
+    color: var(--antiflash-white);
     font-size: 1.1rem;
     line-height: 1.3;
   }

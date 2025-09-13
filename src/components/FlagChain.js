@@ -40,9 +40,9 @@ export function FlagChain() {
 					svg
 					style={{
 						width: "2em",
-						height: "2em",
+						height: "1.5em",
 						marginRight: "0.5em",
-						borderRadius: "3px",
+						borderRadius: "2px",
 						boxShadow: "0 1px 4px rgba(0,0,0,0.08)",
 					}}
 					title={country.name}

@@ -10,6 +10,6 @@
     font-size: clamp(2rem, 5vw, 4rem);
     font-weight: 700;
     margin-bottom: 2rem;
-    color: var(--pomp-and-power);
+    color: var(--verdigris);
     text-align: left;
 }

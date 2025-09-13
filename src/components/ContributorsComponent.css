@@ -10,7 +10,7 @@
   font-size: clamp(2rem, 5vw, 8rem);
   font-weight: bold;
   margin-bottom: 10px;
-  color: var(--pomp-and-power);
+  color: var(--verdigris);
 }
 
 .contributors-grid {
@@ -20,9 +20,9 @@
 }
 
 .contributor-card {
-  background: white;
+  background: var(--charcoal-grey);
   border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(122, 138, 153, 0.07);
   padding: 1.5rem;
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -30,7 +30,7 @@
 
 .contributor-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  box-shadow: 0 2px 8px rgba(122, 138, 153, 0.07);
 }
 
 .avatar-wrapper {
@@ -44,7 +44,7 @@
   height: 96px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #e5e7eb;
+  border: 3px solid var(--medium-grey);
 }
 
 .contributor-name {
@@ -57,7 +57,7 @@
 .contributor-role {
   display: block;
   font-size: 0.9rem;
-  color: #6b7280;
+  color: var(--antiflash-white);
   margin-bottom: 0.5rem;
 }
 
@@ -95,26 +95,27 @@
 .filter-button {
   padding: 0.5rem 1rem;
   border-radius: 9999px;
-  border: 1px solid #ddd;
-  background: white;
+  border: 1px solid #3e3e3e;
+  background: var(--charcoal-grey);
   cursor: pointer;
   transition: all 0.2s ease;
   font-size: 0.9rem;
+  color: var(--antiflash-white);
 }
 
 .filter-button:hover {
-  background: #f3f4f6;
+  background: var(--medium-grey);
 }
 
 .filter-button.active {
-  background: var(--pomp-and-power);
-  color: white;
-  border-color: var(--pomp-and-power);
+  background: var(--verdigris);
+  color: var(--charcoal-grey);
+  border-color: var(--verdigris);
 }
 
 .contributor-topic {
   display: block;
   font-size: 0.85rem;
-  color: #9ca3af; /* slightly lighter than role */
+  color: #a6adb8; /* slightly lighter than role */
   margin-top: 0.25rem;
 }

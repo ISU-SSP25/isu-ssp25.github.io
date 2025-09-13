@@ -15,7 +15,7 @@
     max-width: 320px;
     margin: 12px auto;
     border-radius: 4px; /* Less rounded corners */
-    border: 2px solid white; /* Clean white outline */
+    border: 2px solid black; /* Clean black outline */
     background: transparent;
     padding: 15px;
     display: flex;
@@ -68,7 +68,7 @@
 .content-element .btn-primary {
     border: none;
     background: none;
-    color: white;
+    color: var(--charcoal-grey);
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -82,7 +82,7 @@
 }
 
 .content-element .btn-primary:hover {
-    color: var(--jungle-green); /* Subtle color change on hover */
+    color: var(--low-contrast-grey); /* Subtle color change on hover */
 }
 
 /* Hashtags section */
@@ -108,7 +108,7 @@
 /* Hashtag hover effect */
 .content-element .hashtag:hover {
     background: white;
-    color: black;
+    color: white;
     opacity: 1;
     transition: all 0.2s ease-in-out;
 }

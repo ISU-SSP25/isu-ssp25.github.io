@@ -1,7 +1,7 @@
 @import '../styles/colors.css';
 
 .Navbar {
-  background-color: var(--seasalt);
+  background-color: var(--dark-charcoal); /* Dark background for navbar */
   /* margin: 0 auto; */
   padding: 10px;
   max-width: 100%; /* Optional: Limit the page width */
@@ -15,7 +15,7 @@
 
 /* Navbar when scrolled */
 .Navbar.scrolled {
-  background-color: rgba(250, 250, 250, 0.8); /* more transparent */
+  background-color: rgba(20, 20, 20, 0.8); /* more transparent */
   padding: 10px 20px; /* smaller padding = reduced height */
   backdrop-filter: blur(6px); /* nice frosted glass effect (optional) */
 }
@@ -27,13 +27,14 @@
 
 /* Navbar Links */
 .Nav-link {
-  color: var(--space-cadet);
+  color: var(--antiflash-white); /* Light color for links */
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
 
 .Nav-link:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(192, 192, 192, 0.06);
+  border-radius: 2px;
 }
 
 .Nav {
@@ -54,7 +55,7 @@
 }
 
 .Nav-icon {
-  color: var(--pomp-and-power); /* White color for icons */
+  color: var(--verdigris); /* White color for icons */
   margin-left: 1rem; /* Adds space between icons */
   text-decoration: none; /* Removes underline on links */
 }
@@ -65,7 +66,7 @@
 
 .Nav-link.active {
   font-weight: bold;
-  color: var(--pomp-and-power);
+  color: var(--verdigris);
   /* text-decoration: underline;
   text-underline-offset: 9px; /* Adjust underline distance from text */
   /* text-decoration-thickness: 1px; Controls the thickness */

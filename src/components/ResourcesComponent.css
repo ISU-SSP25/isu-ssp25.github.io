@@ -13,7 +13,7 @@
     font-size: clamp(2rem, 5vw, 4rem);
     font-weight: 700;
     margin-bottom: 2rem;
-    color: var(--pomp-and-power);
+    color: var(--verdigris);
     text-align: left;
 }
 
@@ -24,7 +24,7 @@
     text-align: left;
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--pomp-and-power);
+    color: var(--verdigris);
 }
 
 /* Resource Items */
@@ -35,21 +35,22 @@
 
 .resource-item::before {
     content: "• ";
-    color: var(--pomp-and-power);
+    color: var(--verdigris);
     font-weight: bold;
     margin-right: 0.5rem;
 }
 
 .resource-item a {
     text-decoration: none;
-    color: var(--text-color, #333);
+    color: var(--antiflash-white);
     padding: 0.5rem;
     border-radius: 4px;
     transition: all 0.3s ease;
 }
 
 .resource-item a:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(192, 192, 192, 0.06);
+    border-radius: 2px;
     text-decoration: underline;
 }
 
@@ -65,7 +66,7 @@
 
 .resources-presentation-video::before {
     content: "• ";
-    color: var(--pomp-and-power);
+    color: var(--verdigris);
     font-weight: bold;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
@@ -77,7 +78,7 @@
     height: auto;
     aspect-ratio: 16/9;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(109, 109, 109, 0.15);
 }
 
 /* Mobile Responsive */
@@ -113,15 +114,15 @@
     padding: 0;
     font-size: 1rem;
     font-weight: 500;
-    color: var(--text-color, #333);
+    color: var(--antiflash-white);
 }
 
 .github-resource {
     display: flex;
     align-items: center;
-    background: #f6f8fa;
+    background: var(--charcoal-grey);
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(33,37,41,0.07);
+    box-shadow: 0 2px 8px rgba(122, 138, 153, 0.07);
     padding: 1rem 1.5rem;
     margin: 1rem 0;
     gap: 1rem;
@@ -129,7 +130,7 @@
 
 .github-icon {
     font-size: 2.5rem;
-    color: #24292f;
+    color: var(--antiflash-white);
     flex-shrink: 0;
 }
 
@@ -141,13 +142,13 @@
 
 .github-title {
     font-weight: 600;
-    color: #24292f;
+    color: var(--antiflash-white);
     font-size: 1.1rem;
 }
 
 .github-link {
-    background: var(--pomp-and-power, #b47bb7);
-    color: #fff !important;
+    background: var(--verdigris);
+    color: var(--antiflash-white) !important;
     padding: 0.5rem 1.2rem;
     border-radius: 6px;
     text-decoration: none;
@@ -158,6 +159,6 @@
 }
 
 .github-link:hover {
-    background: var(--pomp-and-power-light, #d1a7d7);
-    color: #24292f !important;
+    background: var(--low-contrast-grey);
+    color: var(--antiflash-white) !important;
 }

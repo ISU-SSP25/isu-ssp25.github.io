@@ -6,7 +6,7 @@
   padding: 0;
   flex-wrap: wrap;
 
-  background-color: var(--antiflash-white);
+  background-color: var(--charcoal-grey);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -36,7 +36,7 @@
   margin-bottom: 10px;
   margin-top: 150px;
   margin-left: 5px;
-  color: var(--pomp-and-power);
+  color: var(--verdigris);
 }
 
 
