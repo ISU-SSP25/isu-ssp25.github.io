@@ -14,7 +14,7 @@ export function LongTermVision() {
 } />
 			</div>
 
-			
+			<Footer />
 		</div>
 	);
 }

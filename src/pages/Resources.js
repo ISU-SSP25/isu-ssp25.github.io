@@ -7,7 +7,7 @@ export function Resources() {
           <div className="PageContent">
             <ResourcesComponent />
           </div>
-          
+          <Footer />
         </div>
       );
 }

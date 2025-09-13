@@ -1,7 +1,103 @@
-@import '../styles/colors.css';
-
 .site-footer {
+  background-color: var(--dark-charcoal);
+  color: var(--antiflash-white);
+  font-family: 'Segoe UI', sans-serif;
+  padding: 15px 20px;
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  /* Add space above the footer */
+  margin: 20px 0 0 0; /* adjust the value as needed */
+}
+
+/* Subtle centered divider above the footer */
+.site-footer::before {
+  content: "";
+  display: block;
+  width: 99%;              /* short centered line */
+  height: 1px;              /* thin line */
+  background-color: var(--medium-grey);
+  margin: 0 auto 10px auto; /* center it and add spacing below */
+}
+
+.footer-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 99%;
+  gap: 20px;
+}
+
+.footer-left {
+  text-align: left;
+  flex: 1;
+}
+
+.footer-center {
+  text-align: center;
+  flex: 1;
+}
+
+.footer-right {
+  text-align: right;
+  flex: 1;
+}
+
+.highlight {
+    color: var(--verdigris);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.3rem 0.2rem;
+    transition: color 0.3s;
+}
+
+.highlight:hover {
+    color: var(--verdigris-light);
+    background-color: rgba(192, 192, 192, 0.06);
+    border-radius: 2px;
+    text-decoration: underline;
+}
+
+.scroll-top {
+  color: var(--verdigris);
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 10px;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+}
+
+.scroll-top:hover {
+    color: var(--verdigris-light);
+    background-color: rgba(192, 192, 192, 0.06);
+    border-radius: 2px;
+    text-decoration: underline;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .footer-line {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    font-size: 0.85rem;
-    opacity: 0.8;
+    gap: 8px; /* reduce space between items */
+  }
+
+  .footer-left,
+  .footer-right {
+    flex: unset;
+    text-align: center;
+    margin: 0; /* remove any extra spacing */
+  }
+
+  .scroll-top {
+    margin-top: 8px; /* reduce space above scroll-top */
+  }
+
+  .highlight {
+    padding: 0.1rem 0.1rem; /* optional: reduce padding on links */
+  }
 }

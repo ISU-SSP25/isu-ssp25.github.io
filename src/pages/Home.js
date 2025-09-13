@@ -1,4 +1,4 @@
-import { WebsiteNavbar, HomeComponent, TextComponent, FlagChain, Footer, TermBox, WhoAreWeBox } from "../components";
+import { WebsiteNavbar, HomeComponent, FlagChain, Footer, TermBox, WhoAreWeBox } from "../components";
 import * as images from "../images/home";
 
 export function Home() {
@@ -30,7 +30,7 @@ export function Home() {
                 />
                 <FlagChain />                
             </div>
-            
+            <Footer />
         </div>
     );
 }

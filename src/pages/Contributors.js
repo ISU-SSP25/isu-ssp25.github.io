@@ -7,7 +7,7 @@ export function Contributors() {
           <div className="PageContent">
             <ContributorsComponent />
           </div>
-          
+          <Footer />
         </div>
       );
 }
