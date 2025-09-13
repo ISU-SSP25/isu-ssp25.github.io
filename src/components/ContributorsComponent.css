@@ -6,13 +6,70 @@
   padding: 2rem 1.5rem;
 }
 
-.contributors-title h2{
+.contributors-title h2 {
   font-size: clamp(2rem, 5vw, 8rem);
   font-weight: bold;
   margin-bottom: 10px;
   color: var(--verdigris);
 }
 
+/* Hamburger/funnel button for mobile */
+.filter-hamburger {
+  display: none; /* hidden on desktop */
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--dark-charcoal);
+  color: var(--antiflash-white);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.filter-hamburger:hover {
+  background-color: rgba(192, 192, 192, 0.06);
+}
+
+/* Filter bar */
+.contributors-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  background-color: var(--dark-charcoal);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+/* Filter buttons */
+.filter-button {
+  color: var(--antiflash-white);
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.filter-button:hover {
+  background-color: rgba(192, 192, 192, 0.06);
+  color: var(--antiflash-white);
+}
+
+.filter-button.active {
+  color: var(--verdigris);
+  font-weight: bold;
+}
+
+/* Contributors grid & cards */
 .contributors-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -34,7 +91,8 @@
 }
 
 .avatar-wrapper {
-  display: flex;
+  position: relative;
+  display: inline-block;
   justify-content: center;
   margin-bottom: 1rem;
 }
@@ -61,16 +119,18 @@
   margin-bottom: 0.5rem;
 }
 
-.avatar-wrapper {
-  position: relative; /* needed for absolute positioning */
-  display: inline-block;
+.contributor-topic {
+  display: block;
+  font-size: 0.85rem;
+  color: #a6adb8;
+  margin-top: 0.25rem;
 }
 
 .linkedin-badge {
   position: absolute;
   bottom: 0;
   right: 0;
-  transform: translate(25%, 25%); /* nudge slightly out of the circle */
+  transform: translate(25%, 25%);
   background-color: #0a66c2;
   color: white;
   font-size: 0.75rem;
@@ -85,37 +145,41 @@
   transition: background-color 0.2s ease;
 }
 
-.contributors-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-bottom: 2rem;
-}
+/* ---------------------- */
+/* Mobile responsive style */
+/* ---------------------- */
+@media (max-width: 768px) {
+  /* Show hamburger/funnel button on mobile */
+  .filter-hamburger {
+    display: flex;
+  }
 
-.filter-button {
-  padding: 0.5rem 1rem;
-  border-radius: 9999px;
-  border: 1px solid #3e3e3e;
-  background: var(--charcoal-grey);
-  cursor: pointer;
-  transition: all 0.2s ease;
-  font-size: 0.9rem;
-  color: var(--antiflash-white);
-}
+  /* Filters collapsed by default */
+  .contributors-filters {
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    width: 100%;
+  }
 
-.filter-button:hover {
-  background: var(--medium-grey);
-}
+  /* Filters open when toggle clicked */
+  .contributors-filters.open {
+    max-height: 500px;
+    opacity: 1;
+  }
 
-.filter-button.active {
-  background: var(--verdigris);
-  color: var(--charcoal-grey);
-  border-color: var(--verdigris);
-}
+  /* Buttons full width on mobile */
+  .filter-button {
+    width: 100%;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+  }
 
-.contributor-topic {
-  display: block;
-  font-size: 0.85rem;
-  color: #a6adb8; /* slightly lighter than role */
-  margin-top: 0.25rem;
+  /* Grid smaller cards */
+  .contributors-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+  }
 }
