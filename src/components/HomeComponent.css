@@ -6,7 +6,7 @@
   padding: 0;
   flex-wrap: wrap;
 
-  background-color: var(--charcoal-grey);
+  background-color: var(--dark-charcoal);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -75,7 +75,7 @@
     max-width: 95%;
     text-align: center;
     padding: 0rem;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: var(--dark-charcoal);
   }
   .home-component-text h2 {
     font-size: 2rem;

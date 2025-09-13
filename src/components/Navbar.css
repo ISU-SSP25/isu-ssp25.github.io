@@ -1,35 +1,32 @@
 @import '../styles/colors.css';
 
 .Navbar {
-  background-color: var(--dark-charcoal); /* Dark background for navbar */
-  /* margin: 0 auto; */
+  background-color: var(--dark-charcoal);
   padding: 10px;
-  max-width: 100%; /* Optional: Limit the page width */
-  /* margin-top: 20px; */
-  position: sticky;  /* makes it stick */
-  top: 0;            /* stick to top of the page */
-  z-index: 1000;     /* ensures it stays above other content */
-
+  max-width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
 /* Navbar when scrolled */
 .Navbar.scrolled {
-  background-color: rgba(20, 20, 20, 0.8); /* more transparent */
-  padding: 10px 20px; /* smaller padding = reduced height */
-  backdrop-filter: blur(6px); /* nice frosted glass effect (optional) */
+  background-color: rgba(20, 20, 20, 0.8);
+  padding: 10px 20px;
+  backdrop-filter: blur(6px);
 }
 
 .Nav-logo {
-  width: 80px;  /* Default logo size */
-  height: auto;  /* Maintain aspect ratio */
+  width: 80px;
+  height: auto;
 }
 
-/* Navbar Links */
 .Nav-link {
-  color: var(--antiflash-white); /* Light color for links */
+  color: var(--antiflash-white);
   text-decoration: none;
   padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .Nav-link:hover {
@@ -39,70 +36,99 @@
 
 .Nav {
   display: flex;
-  align-items: center; /* Vertically center the items */
-  flex-grow: 1; /* Ensures the nav takes up remaining space */
+  align-items: center;
+  justify-content: flex-start; /* 👈 logo + links stay left */
+  flex-grow: 1;
 }
 
-/* Space between logo and first nav link */
 .Nav-link-logo {
   margin-right: 1rem;
 }
 
 .Nav-icons {
-  display: flex; /* Aligns icons horizontally */
-  align-items: center; /* Vertically centers the icons */
-  margin-left: auto; /* Pushes the icons to the far right */
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 .Nav-icon {
-  color: var(--verdigris); /* White color for icons */
-  margin-left: 1rem; /* Adds space between icons */
-  text-decoration: none; /* Removes underline on links */
+  color: var(--verdigris);
+  margin-left: 1rem;
+  text-decoration: none;
 }
 
 .Nav-icon:hover {
-  color: var(--space-cadet); /* Light color on hover for icons */
+  color: var(--space-cadet);
 }
 
 .Nav-link.active {
   font-weight: bold;
   color: var(--verdigris);
-  /* text-decoration: underline;
-  text-underline-offset: 9px; /* Adjust underline distance from text */
-  /* text-decoration-thickness: 1px; Controls the thickness */
 }
 
-/* Responsive Styles for Small Screens (max-width: 768px) */
+/* ----------------------------- */
+/* Hamburger + responsive styles */
+/* ----------------------------- */
+
+.Nav-hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: var(--verdigris);
+  cursor: pointer;
+  margin-left: auto; /* hamburger stays right */
+}
+
+/* Desktop links */
+.Nav-links {
+  display: flex;
+  margin-left: 0; /* 👈 keep links on the left next to logo */
+}
+
 @media (max-width: 768px) {
   .Navbar {
     padding: 10px;
   }
 
-  /* Smaller logo for mobile view */
   .Nav-logo {
-    width: 1px; /* Adjust logo size for small screens */
+    width: 60px;
   }
 
-  /* Adjust padding for nav links */
-  .Nav-link {
-    padding: 0.5rem 0.8rem; /* Reduced padding for links on small screens */
-  }
-
-  /* Stack the navbar items vertically on smaller screens */
-  .Nav {
+  /* Mobile menu (hidden by default) */
+  .Nav-links {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items at the start */
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.9);
+    backdrop-filter: blur(6px);
+    position: absolute;
+    top: 100%; /* 👈 sits right under navbar, no gap */
+    left: 0;
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
   }
 
-  .Nav-icons {
-    margin-left: 0;
-    margin-top: 1rem; /* Space between icons when stacking */
+  /* Open state */
+  .Nav-links.open {
+    max-height: 500px;
+    opacity: 1;
   }
 
-  /* Adjust links alignment for mobile */
   .Nav-link {
-    width: 100%; /* Make nav links fill the width of the navbar */
-    text-align: center; /* Center text on mobile */
-    padding: 0.8rem 0; /* Adjust padding */
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .Nav-hamburger {
+    display: block;
+  }
+
+  .Nav-link-logo {
+    margin-right: auto;
   }
 }
