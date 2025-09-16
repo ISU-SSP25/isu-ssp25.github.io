@@ -32,7 +32,10 @@
 
 .term-box-text {
   color: var(--antiflash-white);
-  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+  max-width: 95%;
 }
 
 .term-box-link {
