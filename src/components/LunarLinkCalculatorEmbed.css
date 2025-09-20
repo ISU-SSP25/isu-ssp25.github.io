@@ -1,0 +1,289 @@
+/* Lunar Link Calculator Styles */
+.lunar-calculator {
+  background-color: var(--dark-charcoal);
+  color: var(--seasalt);
+  font-family: 'Montserrat', sans-serif;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+}
+
+.lunar-calculator-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.lunar-calculator-title {
+  font-size: clamp(1rem, 3vw, 2rem);
+  font-weight: 700;
+  line-height: 0.5;
+  text-align: center;
+  color: var(--verdigris);
+}
+
+.lunar-calculator-subtitle {
+  text-align: center;
+  font-size: 1.125rem;
+  color: var(--seasalt);
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .lunar-calculator-subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+.lunar-calculator-card {
+  background-color: var(--raisin-black);
+  border-radius: 12px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  border: 1px solid var(--charcoal-grey);
+}
+
+.lunar-calculator-section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--verdigris);
+}
+
+.lunar-calculator-subsection-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--verdigris);
+  color: var(--seasalt);
+}
+
+.lunar-calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.lunar-calculator-input-group {
+  margin-bottom: 1rem;
+}
+
+.lunar-calculator-label {
+  font-weight: 600;
+  color: var(--seasalt);
+  margin-bottom: 0.25rem;
+  display: block;
+  font-size: 0.9rem;
+}
+
+.lunar-calculator-input,
+.lunar-calculator-select {
+  background-color: var(--charcoal-grey);
+  border-radius: 8px;
+  padding: 0.75rem;
+  border: 1px solid var(--medium-grey);
+  color: var(--seasalt);
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lunar-calculator-input:focus,
+.lunar-calculator-select:focus {
+  outline: none;
+  border-color: var(--verdigris);
+  box-shadow: 0 0 0 3px rgba(101, 156, 151, 0.1);
+}
+
+.lunar-calculator-input::placeholder {
+  color: var(--seasalt);
+  opacity: 0.6;
+}
+
+.lunar-calculator-input:disabled,
+.lunar-calculator-select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: var(--dark-charcoal);
+}
+
+.lunar-calculator-button {
+  background-color: var(--verdigris);
+  color: var(--dark-charcoal);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+.lunar-calculator-button:hover:not(:disabled) {
+  background-color: var(--verdigris-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.lunar-calculator-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  background-color: var(--medium-grey);
+}
+
+.lunar-calculator-assumption-text {
+  font-size: 0.875rem;
+  color: var(--seasalt);
+  opacity: 0.7;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.lunar-calculator-section-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.lunar-calculator-results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.lunar-calculator-result-item {
+  background-color: var(--charcoal-grey);
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--verdigris);
+}
+
+.lunar-calculator-result-label {
+  font-weight: 500;
+  color: var(--seasalt);
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.lunar-calculator-result-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--verdigris);
+}
+
+.lunar-calculator-final-result {
+  text-align: center;
+  background-color: var(--charcoal-grey);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid var(--verdigris);
+}
+
+.lunar-calculator-final-label {
+  font-weight: 500;
+  color: var(--seasalt);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.lunar-calculator-final-value {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.lunar-calculator-final-message {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--seasalt);
+}
+
+.lunar-calculator-error {
+  padding: 1rem;
+  background-color: #8B1538;
+  color: #FCA5A5;
+  border-radius: 8px;
+  border-left: 4px solid #DC2626;
+}
+
+.lunar-calculator-placeholder {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--seasalt);
+  opacity: 0.7;
+}
+
+.lunar-calculator-footnote {
+  font-size: 0.75rem;
+  color: var(--seasalt);
+  margin-top: 1rem;
+  border-top: 1px solid var(--charcoal-grey);
+  padding-top: 1rem;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.lunar-calculator-footnote p {
+  margin-bottom: 0.5rem;
+}
+
+.lunar-calculator-footnote ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.lunar-calculator-footnote li {
+  margin-bottom: 0.25rem;
+}
+
+.lunar-calculator-footnote b {
+  color: var(--verdigris);
+}
+
+/* Button center container */
+.lunar-calculator-button-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Result colors */
+.result-color-red {
+  color: #FCA5A5;
+}
+
+.result-color-green {
+  color: #86EFAC;
+}
+
+.result-color-yellow {
+  color: #FDE047;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .lunar-calculator {
+    padding: 1rem 0.5rem;
+  }
+  
+  .lunar-calculator-card {
+    padding: 1.5rem;
+  }
+  
+  .lunar-calculator-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .lunar-calculator-results-grid {
+    grid-template-columns: 1fr;
+  }
+}
