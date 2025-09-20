@@ -25,7 +25,7 @@ export function ResourcesComponent() {
 			</h3>
 			<div className="resource-item">
 				<a
-					href="https://sustainablelunar.space"
+					href="https://isulibrary.isunet.edu/index.php?lvl=notice_display&id=12277"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
