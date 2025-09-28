@@ -83,23 +83,6 @@ export function RoadMap() {
 ];
 return (
   <div className="timeline-container">
-    <svg
-      className="timeline-path"
-      width="100%"
-      height="100%"
-      viewBox="0 0 100 100"
-      preserveAspectRatio="none"
-    >
-      <path
-        d="M 50 0 L 50 100%"
-        stroke="var(--verdigris)"
-        strokeWidth="0.2"
-        fill="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        opacity="0.8"
-      />
-    </svg>
 
     {steps.map((step, index) => (
       <div key={index} className="timeline-step">
