@@ -1,4 +1,4 @@
-import { TermComponent, WebsiteNavbar, Footer } from "../components";
+import { TermComponent, WebsiteNavbar, Footer, RoadMap } from "../components";
 // import * as images from "../images/long-term-vision";
 
 export function ShortTermMission() {
@@ -13,6 +13,10 @@ export function ShortTermMission() {
   </>
 } />
 			</div>
+
+		<div className="RoadMap">
+			<RoadMap />
+		</div>
 
 			<Footer />
 		</div>

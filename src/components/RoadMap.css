@@ -1,0 +1,127 @@
+.timeline-container {
+  position: relative;
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+.timeline-path {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  z-index: 0;
+}
+
+.timeline-step {
+  position: relative;
+  margin: 6rem 0; /* espace entre les boxes */
+  display: flex;
+  align-items: flex-start;
+}
+
+.timeline-marker {
+  position: absolute;        
+  right: -20px;              
+  top: -20px;               
+  z-index: 2;               
+  width: 80px;
+  height: 80px;
+  opacity: 0.8;             
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-icon {
+  width: 200%;               
+  height: 200%;
+  object-fit: contain;
+}
+
+.timeline-content {
+  background: var(--charcoal-grey);
+  padding: 1rem 2rem;
+  flex: 1;
+  border-radius: 8px;
+  margin-left: 0;           
+  width: 100%;
+  position: relative;      
+}
+
+.timeline-content h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--verdigris);
+  margin-bottom: 1rem;
+}
+
+.timeline-content p {
+  margin: 1rem 0;              
+  color: var(--antiflash-white);
+  line-height: 1.6;
+  white-space: pre-wrap;    
+  font-size: 1.1rem;     
+}
+
+.timeline-content p.indent {
+  padding-left: 2em;            
+}
+
+.report-link a {
+  color: var(--verdigris);
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.report-link a:hover {
+  background-color: rgba(192, 192, 192, 0.06);
+  border-radius: 2px;
+  text-decoration: underline;
+}
+
+/* Listes */
+.timeline-content ul {
+  padding-left: 2rem;
+  margin: 0.5rem 0;
+  list-style-type: disc;
+}
+
+.timeline-content li {
+  color: var(--antiflash-white);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .timeline-step {
+    flex-direction: column;      /* stack vertically */
+    align-items: flex-start;
+    margin: 3rem 0;
+  }
+
+  .timeline-marker {
+    position: relative;          /* no longer absolute */
+    top: 0;
+    right: 0;
+    transform: none;             /* remove translation */
+    width: 50px;                 /* smaller logo */
+    height: 50px;
+    opacity: 0.8;                /* slightly transparent */
+    margin-bottom: 0.5rem;       /* space between logo and box */
+  }
+
+  .timeline-content {
+    width: 100%;                 /* full width for readability */
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .timeline-path {
+    display: none;               /* optional: hide wavy path for mobile */
+  }
+}
