@@ -13,3 +13,11 @@
     color: var(--verdigris);
     text-align: left;
 }
+
+.text-component-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--antiflash-white);
+    margin-bottom: 1rem;
+    max-width: 95%;
+}

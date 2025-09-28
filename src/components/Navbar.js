@@ -36,7 +36,7 @@ export function WebsiteNavbar() {
             className="Nav-hamburger"
             onClick={() => setIsOpen(!isOpen)}
           >
-            &#9776;
+            Menu
           </button>
 
           {/* Liens du menu */}

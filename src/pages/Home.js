@@ -1,4 +1,4 @@
-import { WebsiteNavbar, HomeComponent, FlagChain, Footer, TermBox, WhoAreWeBox } from "../components";
+import { WebsiteNavbar, HomeComponent, FlagChain, Footer, TermBox, WhoAreWeBox, MissionBox } from "../components";
 import * as images from "../images/home";
 
 export function Home() {
@@ -6,11 +6,17 @@ export function Home() {
         <div className="PageContainer">
             <WebsiteNavbar />
             <div className="PageContent">
+
                 <div className="intro-text">
                     <HomeComponent image={images.LunarCoverHome} title={<h2>Enabling Sustainable Lunar Spaceports</h2>} text={<>
                     </>}
                     />
                 </div>
+
+                <div className="mission-box">
+                    <MissionBox />  
+                </div>
+
                 <div className="term-boxes-container">
                     <TermBox
                         title="Short Term Mission"

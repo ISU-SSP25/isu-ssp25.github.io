@@ -12,7 +12,7 @@
 
 .term-box {
   background: var(--charcoal-grey, #f8f8f8);
-  border-radius: 12px;
+  border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
   padding: 2rem;
   flex: 1 1 0;        /* <-- This makes each box grow to fill available space */
