@@ -12,7 +12,7 @@ export function RoadMap() {
         "Key challenges include higher delta-v requirements for polar missions, extreme cold in shadowed regions, and hazardous regolith dust, which demand robust dust mitigation and detailed geophysical surveys before construction."
       ],
       reportlink: { 
-        text: "Section 1.1 of the full report", 
+        text: "Section 1.1 of the report", 
         url: "https://isulibrary.isunet.edu/index.php?lvl=notice_display&id=12277"
       },
     },
@@ -29,7 +29,7 @@ export function RoadMap() {
         "Robotics will be central to building and operating a lunar spaceport. Autonomous and semi-autonomous systems can handle tasks such as cargo offloading, mobility, and construction, reducing crew workload and mission risk."
       ],
       reportlink: { 
-        text: "Section 1.1 of the full report", 
+        text: "Section 1.1 of the report", 
         url: "https://isulibrary.isunet.edu/index.php?lvl=notice_display&id=12277"
       },
     },
@@ -44,7 +44,7 @@ export function RoadMap() {
         "We suggest a phased, hybrid transport architecture to best address today’s lunar logistics gap - deploying modular, coordinated hoppers for flexible and autonomous point-to-point delivery alongside a FLOAT low-power system that allows fixed, high-cadence shuttling between designated sites."
       ],
       reportlink: { 
-        text: "Section 1.2 of the full report", 
+        text: "Section 1.2 of the report", 
         url: "https://isulibrary.isunet.edu/index.php?lvl=notice_display&id=12277"
       },
     },
@@ -61,7 +61,7 @@ export function RoadMap() {
         "\tBased on integrating with existing lunar base programs, like NASA’s LunaNet, the deployment and construction of MPRTs can be conducted in the short term through an uncrewed service establishment phase and developed to support semi-permanent operations.",
     ],
       reportlink: { 
-        text: "Section 1.2 of the full report", 
+        text: "Section 1.2 of the report", 
         url: "https://isulibrary.isunet.edu/index.php?lvl=notice_display&id=12277"
       },
     },
@@ -76,7 +76,7 @@ export function RoadMap() {
         "\tEconomics: Our analysis estimates initial pad construction at $4 billion, with launch/landing fees (~$20–30M per mission) forming the core revenue stream. Breakeven requires 15–20 launches per year, supplemented by ISRU propellant sales, cargo handling, and tourism. A public–private partnership model ensures financial sustainability and growth.",
     ],
       reportlink: { 
-        text: "Section 1.3 of the full report", 
+        text: "Section 1.3 of the report", 
         url: "https://isulibrary.isunet.edu/index.php?lvl=notice_display&id=12277"
       },
     },
