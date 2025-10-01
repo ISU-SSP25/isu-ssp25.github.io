@@ -1,4 +1,4 @@
-import { TermComponent, WebsiteNavbar, Footer } from "../components";
+import { TermComponent, WebsiteNavbar, Footer, RoadMapLong } from "../components";
 // import * as images from "../images/long-term-vision";
 
 export function LongTermVision() {
@@ -6,14 +6,33 @@ export function LongTermVision() {
 		<div className="PageContainer">
 			<WebsiteNavbar />
 			<div className="PageContent">
-				<TermComponent title={"Long Term Vision"} text={
-  <>
-    <p>The initial lunar spaceport infrastructure serves as the foundation for humanity's long-term vision of space settlement, where today's design choices will shape tomorrow's lunar society and the new space economy.</p>
-    <p>Our ambitious concept envisions a centralized transportation hub supporting 10 daily launches to Earth, Mars, and across the lunar surface, emphasizing sustainable cislunar operations, human welfare, and economic development to transform today's seemingly impossible dreams into tomorrow's achievable reality.</p>
-  </>
-} />
+				<TermComponent
+					title={"Long Term Vision"}
+					text={
+						<>
+							<p>
+								The initial spaceport infrastructure on the Moon in the short
+								term, is designed to meet immediate mission requirements and
+								pave the way for future settlements. However, its importance
+								extends beyond just the first missions, it serves as the
+								foundation for a long-term vision.
+							</p>
+							<p>
+								{" "}
+								Spaceports are the launching pad for the new space economy.
+								However, to secure their future over the long term, spaceport
+								developers must choose the right path today, emphasizing not
+								only the importance of spaceports for future Moon habitation but
+								also how every step taken today will shape tomorrow’s lunar
+								society.
+							</p>
+						</>
+					}
+				/>
 			</div>
-
+		<div className="RoadMapLong">
+			<RoadMapLong />
+		</div>
 			<Footer />
 		</div>
 	);

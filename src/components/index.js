@@ -12,3 +12,4 @@ export * from "./ScrollToTop";
 export * from "./FlagChain";
 export * from "./MissionBox";
 export * from "./RoadMap";
+export * from "./RoadMapLong";
