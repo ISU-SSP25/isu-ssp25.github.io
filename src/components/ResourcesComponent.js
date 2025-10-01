@@ -11,7 +11,7 @@ export function ResourcesComponent() {
 			</h3>
 			<div className="resource-item">
 				<a
-					href="https://sustainablelunar.space"
+					href="https://dl.iafastro.directory/event/IAC-2025/paper/99090/"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
