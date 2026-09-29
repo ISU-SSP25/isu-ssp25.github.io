@@ -46,6 +46,7 @@ export function WebsiteNavbar() {
             <Nav.Link className={`Nav-link ${location.pathname === "/long-term-vision" ? "active" : ""}`} href="/#/long-term-vision">Long Term Vision</Nav.Link>
             <Nav.Link className={`Nav-link ${location.pathname === "/contributors" ? "active" : ""}`} href="/#/contributors">Contributors</Nav.Link>
             <Nav.Link className={`Nav-link ${location.pathname === "/resources" ? "active" : ""}`} href="/#/resources">Resources</Nav.Link>
+            <Nav.Link className={`Nav-link ${location.pathname === "/lunar-link-budget" ? "active" : ""}`} href="/#/lunar-link-budget">Calculator</Nav.Link>
             <Nav.Link className={`Nav-link ${location.pathname === "/iac2026" ? "active" : ""}`} href="/#/iac2026">IAC 2026</Nav.Link>
           </div>
         </Nav>

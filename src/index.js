@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { HashRouter, Routes, Route } from "react-router-dom";  // Change BrowserRouter to HashRouter
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { Home, ShortTermMission, LongTermVision, Contributors, Resources, IAC2026} from "./pages";
+import { Home, ShortTermMission, LongTermVision, Contributors, Resources, IAC2026, LunarLinkBudget} from "./pages";
 import { ScrollToTop } from "./components"; // Import your component
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,6 +18,7 @@ root.render(
         <Route path="/contributors" element={<Contributors />} /> 
         <Route path="/resources" element={<Resources />} />
         <Route path="/iac2026" element={<IAC2026 />} />
+        <Route path="/lunar-link-budget" element={<LunarLinkBudget />} />
         
       </Routes>
     </HashRouter>
